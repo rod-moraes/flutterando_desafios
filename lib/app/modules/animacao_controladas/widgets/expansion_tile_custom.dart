@@ -67,7 +67,6 @@ class _ExpansionControladaTileCustomState
                 alignment: 0,
                 duration: const Duration(milliseconds: 500),
               );
-              setState(() {});
               toggleAnimated();
             },
             title: Builder(builder: (context) {

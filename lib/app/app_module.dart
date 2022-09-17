@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:flutterando_desafios/app/modules/animacao_controladas/desafio_one_page.dart';
+import 'package:flutterando_desafios/app/modules/animacao_controladas/desafio_controlada_one_page.dart';
 import 'package:flutterando_desafios/app/modules/tinder/tinder_page.dart';
 
-import 'modules/animacao_controladas/desafio_two_page.dart';
+import 'modules/animacao_controladas/desafio_controlada_two_page.dart';
 import 'modules/animacao_implicitas/desafio_one_page.dart';
 import 'modules/animacao_implicitas/desafio_two_page.dart';
 import 'modules/money_control/money_control_page.dart';
