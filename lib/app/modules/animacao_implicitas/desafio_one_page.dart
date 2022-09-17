@@ -9,7 +9,6 @@ class DesafioOnePage extends StatefulWidget {
 
 class _DesafioOnePageState extends State<DesafioOnePage> {
   Alignment _alignment = Alignment.bottomRight;
-  ShapeBorder _shape = const CircleBorder();
   double _widthRadius = 50;
 
   void modifyWidth() {
@@ -17,14 +16,6 @@ class _DesafioOnePageState extends State<DesafioOnePage> {
       _widthRadius = 50;
     } else if (_widthRadius == 50) {
       _widthRadius = 0;
-    }
-  }
-
-  void modifyShape() {
-    if (_shape is RoundedRectangleBorder) {
-      _shape = const CircleBorder();
-    } else if (_shape is CircleBorder) {
-      _shape = const RoundedRectangleBorder();
     }
   }
 
@@ -62,7 +53,6 @@ class _DesafioOnePageState extends State<DesafioOnePage> {
                 borderRadius: BorderRadius.circular(_widthRadius),
                 onTap: () {
                   setState(() {
-                    modifyShape();
                     modifyAlignment();
                     modifyWidth();
                   });

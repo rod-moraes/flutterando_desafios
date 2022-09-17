@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 
 import 'widgets/expansion_tile_custom.dart';
 
-class DesafioTwoPage extends StatefulWidget {
-  const DesafioTwoPage({super.key});
+class DesafioControladaTwoPage extends StatefulWidget {
+  const DesafioControladaTwoPage({super.key});
 
   @override
-  State<DesafioTwoPage> createState() => _DesafioTwoPageState();
+  State<DesafioControladaTwoPage> createState() =>
+      _DesafioControladaTwoPageState();
 }
 
-class _DesafioTwoPageState extends State<DesafioTwoPage> {
+class _DesafioControladaTwoPageState extends State<DesafioControladaTwoPage> {
   final ScrollController _controller = ScrollController();
 
   @override
@@ -30,7 +31,7 @@ class _DesafioTwoPageState extends State<DesafioTwoPage> {
         physics: const BouncingScrollPhysics(
             parent: AlwaysScrollableScrollPhysics()),
         itemCount: 100,
-        itemBuilder: (context, index) => ExpansionTileCustom(
+        itemBuilder: (context, index) => ExpansionControladaTileCustom(
           scrollController: _controller,
           title: index.toString(),
         ),
